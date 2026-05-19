@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as ReviewsRouteImport } from './routes/reviews'
 import { Route as PortfolioRouteImport } from './routes/portfolio'
 import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as FullReviewsRouteImport } from './routes/full-reviews'
+import { Route as FullPortfolioRouteImport } from './routes/full-portfolio'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -30,6 +32,16 @@ const GalleryRoute = GalleryRouteImport.update({
   path: '/gallery',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FullReviewsRoute = FullReviewsRouteImport.update({
+  id: '/full-reviews',
+  path: '/full-reviews',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FullPortfolioRoute = FullPortfolioRouteImport.update({
+  id: '/full-portfolio',
+  path: '/full-portfolio',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -44,6 +56,8 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/full-portfolio': typeof FullPortfolioRoute
+  '/full-reviews': typeof FullReviewsRoute
   '/gallery': typeof GalleryRoute
   '/portfolio': typeof PortfolioRoute
   '/reviews': typeof ReviewsRoute
@@ -51,6 +65,8 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/full-portfolio': typeof FullPortfolioRoute
+  '/full-reviews': typeof FullReviewsRoute
   '/gallery': typeof GalleryRoute
   '/portfolio': typeof PortfolioRoute
   '/reviews': typeof ReviewsRoute
@@ -59,21 +75,47 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
+  '/full-portfolio': typeof FullPortfolioRoute
+  '/full-reviews': typeof FullReviewsRoute
   '/gallery': typeof GalleryRoute
   '/portfolio': typeof PortfolioRoute
   '/reviews': typeof ReviewsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/gallery' | '/portfolio' | '/reviews'
+  fullPaths:
+    | '/'
+    | '/contact'
+    | '/full-portfolio'
+    | '/full-reviews'
+    | '/gallery'
+    | '/portfolio'
+    | '/reviews'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/gallery' | '/portfolio' | '/reviews'
-  id: '__root__' | '/' | '/contact' | '/gallery' | '/portfolio' | '/reviews'
+  to:
+    | '/'
+    | '/contact'
+    | '/full-portfolio'
+    | '/full-reviews'
+    | '/gallery'
+    | '/portfolio'
+    | '/reviews'
+  id:
+    | '__root__'
+    | '/'
+    | '/contact'
+    | '/full-portfolio'
+    | '/full-reviews'
+    | '/gallery'
+    | '/portfolio'
+    | '/reviews'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
+  FullPortfolioRoute: typeof FullPortfolioRoute
+  FullReviewsRoute: typeof FullReviewsRoute
   GalleryRoute: typeof GalleryRoute
   PortfolioRoute: typeof PortfolioRoute
   ReviewsRoute: typeof ReviewsRoute
@@ -102,6 +144,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GalleryRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/full-reviews': {
+      id: '/full-reviews'
+      path: '/full-reviews'
+      fullPath: '/full-reviews'
+      preLoaderRoute: typeof FullReviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/full-portfolio': {
+      id: '/full-portfolio'
+      path: '/full-portfolio'
+      fullPath: '/full-portfolio'
+      preLoaderRoute: typeof FullPortfolioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -122,6 +178,8 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
+  FullPortfolioRoute: FullPortfolioRoute,
+  FullReviewsRoute: FullReviewsRoute,
   GalleryRoute: GalleryRoute,
   PortfolioRoute: PortfolioRoute,
   ReviewsRoute: ReviewsRoute,
@@ -129,3 +187,13 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
