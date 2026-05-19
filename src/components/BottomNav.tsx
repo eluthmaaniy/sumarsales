@@ -1,13 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import { User, LayoutGrid, Images, MessageSquare, Mail } from "lucide-react";
 
-const tabs = [
+const tabs: Array<{ to: "/" | "/portfolio" | "/gallery" | "/reviews" | "/contact"; label: string; icon: typeof User; exact?: boolean }> = [
   { to: "/", label: "About", icon: User, exact: true },
   { to: "/portfolio", label: "Portfolio", icon: LayoutGrid },
   { to: "/gallery", label: "Gallery", icon: Images },
   { to: "/reviews", label: "Reviews", icon: MessageSquare },
   { to: "/contact", label: "Contact", icon: Mail },
-] as const;
+];
 
 export function BottomNav() {
   return (
