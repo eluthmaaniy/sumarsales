@@ -1,5 +1,5 @@
 // =============================================================================
-// Eldev reviews — 239 verified reviews, 4.8★ average.
+// Sumar reviews — 239 verified reviews, 4.8★ average.
 // Names + countries are exclusively from US / UK / Western & Northern Europe.
 // Dates are computed relative to "now" so they always feel fresh.
 // Collection window: September 1, 2024 → today (capped at April 21, 2026).
@@ -109,24 +109,24 @@ const lastNames = [
 ];
 
 const reviewBodies = [
-  "Absolutely incredible work on my Shopify store. The design is sleek, the speed is amazing, and Eldev was so easy to communicate with. Will hire again for sure!",
+  "Absolutely incredible work on my Shopify store. The design is sleek, the speed is amazing, and Sumar was so easy to communicate with. Will hire again for sure!",
   "Delivered my dropshipping store ahead of schedule. Every detail was thought through — from product listings to checkout. Highly recommended.",
-  "My old Shopify store felt outdated. Eldev redesigned it from the ground up and conversions jumped within the first two weeks. Brilliant work.",
+  "My old Shopify store felt outdated. Sumar redesigned it from the ground up and conversions jumped within the first two weeks. Brilliant work.",
   "Professional, fast, and patient with my endless revisions. The final store looks better than I imagined. Easy 5 stars.",
-  "Eldev built my beauty store and helped me set up email flows. Sales started coming in days after launch. Worth every penny.",
+  "Sumar built my beauty store and helped me set up email flows. Sales started coming in days after launch. Worth every penny.",
   "Smooth experience from start to finish. Communication was top-tier and the product listings he wrote actually convert. Will be back.",
   "Hands down the best Shopify expert I've worked with. He understood my brand instantly and the store looks like a million bucks.",
   "Quick turnaround on my product listing optimization. SEO-friendly, well-written, and ready to convert.",
-  "Eldev rebuilt my entire Shopify theme from scratch. Mobile speed went from awful to lightning fast. So happy with the result.",
+  "Sumar rebuilt my entire Shopify theme from scratch. Mobile speed went from awful to lightning fast. So happy with the result.",
   "Honest, talented, and reliable. He set up my dropshipping store exactly as discussed and even threw in extras. 10/10.",
   "Great communication every step of the way. Delivered on time and the design feels premium. Will recommend to friends.",
-  "Eldev redesigned my Shopify store and the conversion rate doubled within a month. Worth every dollar.",
+  "Sumar redesigned my Shopify store and the conversion rate doubled within a month. Worth every dollar.",
   "Smart, talented, and easy to work with. He gave me real advice instead of just saying yes to everything. Loved that.",
-  "Fast delivery, beautiful Shopify design, and great support after launch. Highly recommend Eldev.",
-  "I was nervous about hiring online but Eldev made the whole process effortless. My store is finally live and looks amazing.",
+  "Fast delivery, beautiful Shopify design, and great support after launch. Highly recommend Sumar.",
+  "I was nervous about hiring online but Sumar made the whole process effortless. My store is finally live and looks amazing.",
   "Migrated my entire WooCommerce store to Shopify without losing a single product. Couldn't be happier.",
   "He set up Klaviyo flows that recovered abandoned carts within a week. Real ROI on the investment.",
-  "Beautiful theme customization. My store finally matches my brand identity. Thank you, Eldev!",
+  "Beautiful theme customization. My store finally matches my brand identity. Thank you, Sumar!",
   "Excellent communication and a really sharp eye for design. My customers keep complimenting the new look.",
   "Site speed went from 38 to 92 on PageSpeed. My bounce rate dropped immediately.",
   "He didn't just build the store — he taught me how to manage it. That kind of generosity is rare.",
@@ -134,10 +134,10 @@ const reviewBodies = [
   "Set up Facebook & Instagram ads that brought my first 100 sales. Knows ecom inside out.",
   "His TikTok ads strategy got me 4x ROAS in the first month. Booked him again immediately.",
   "Cleaned up my Shopify backend, fixed all the broken redirects, and improved my SEO ranking.",
-  "Genuinely the smoothest freelance experience I've had. Eldev is the real deal.",
+  "Genuinely the smoothest freelance experience I've had. Sumar is the real deal.",
   "Got my Shopify store launch-ready in under a week. The launch went perfectly.",
   "Quick to respond, easy to work with, and delivered above expectations. Will definitely rehire.",
-  "Eldev fixed checkout issues that two other developers couldn't figure out. Lifesaver.",
+  "Sumar fixed checkout issues that two other developers couldn't figure out. Lifesaver.",
   "He built my product collections and tagged everything cleanly. Huge time saver.",
   "Set up Google Merchant Center and Shopping ads — first sale came in 48 hours.",
   "Patient, kind, and highly skilled. My Shopify store now looks like a luxury brand.",
@@ -152,7 +152,7 @@ const reviewBodies = [
   "Sharp eye for detail. Fixed dozens of small UX issues I hadn't even noticed.",
   "Outstanding work on the product page redesign. Add-to-cart rate went up 22% the first week.",
   "Communication in his own words: clear, kind, no fluff. So refreshing.",
-  "Saved my launch. We were 48 hours out and Eldev got everything across the line.",
+  "Saved my launch. We were 48 hours out and Sumar got everything across the line.",
   "He doesn't just code — he thinks like a merchant. Genuinely useful suggestions throughout.",
   "Built me a beautiful Dawn-based store from scratch. Pixel perfect.",
 ];
