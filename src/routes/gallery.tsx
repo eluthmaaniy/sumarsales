@@ -19,6 +19,8 @@ export const Route = createFileRoute("/gallery")({
 const reels = [
   { id: "b-97OtPxnUw", caption: "Reel 01 · Live Shopify Build" },
   { id: "QYhUyoyWYd4", caption: "Reel 02 · Store Configuration" },
+  { id: "_PX1TMbTZ1Y", caption: "Reel 03 · Behind the Desk" },
+  { id: "_Ds4VWdrD3k", caption: "Reel 04 · Store Optimization" },
 ];
 
 function GalleryPage() {
