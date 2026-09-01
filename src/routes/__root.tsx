@@ -58,7 +58,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Sumar Network Service — Shopify Partner expert helping store owners design, redesign, migrate, and scale profitable Shopify stores.",
+          "Sumar Ecom Support — Shopify Partner expert helping store owners design, redesign, migrate, and scale profitable Shopify stores.",
       },
       { name: "theme-color", content: "#1DBF73" },
       { property: "og:site_name", content: SITE.name },
@@ -73,9 +73,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Lovable App" },
       { property: "og:title", content: "Lovable App" },
       { name: "twitter:title", content: "Lovable App" },
-      { name: "description", content: "Sumar Network Service showcases digital solutions and client success stories." },
-      { property: "og:description", content: "Sumar Network Service showcases digital solutions and client success stories." },
-      { name: "twitter:description", content: "Sumar Network Service showcases digital solutions and client success stories." },
+      { name: "description", content: "Sumar Ecom Support showcases digital solutions and client success stories." },
+      { property: "og:description", content: "Sumar Ecom Support showcases digital solutions and client success stories." },
+      { name: "twitter:description", content: "Sumar Ecom Support showcases digital solutions and client success stories." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f789b285-53f5-40e1-9f47-bbdfaa1ec57a/id-preview-ffac13ea--031a1d8e-4e58-4e38-ad9d-9153f3eed93c.lovable.app-1779155796961.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/f789b285-53f5-40e1-9f47-bbdfaa1ec57a/id-preview-ffac13ea--031a1d8e-4e58-4e38-ad9d-9153f3eed93c.lovable.app-1779155796961.png" },
     ],

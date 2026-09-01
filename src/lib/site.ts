@@ -1,12 +1,12 @@
 export const SITE = {
-  name: "Sumar Network Service",
+  name: "Sumar Ecom Support",
   shortName: "Sumar",
   tagline: "I'll bring your ideas to life.",
   email: "sobintanumar@gmail.com",
-  phone: "+1 (857) 292-4938",
-  phoneHref: "tel:+18572924938",
+  phone: "+44 7462229610",
+  phoneHref: "tel:+447462229610",
   whatsapp:
-    "https://wa.me/18572924938?text=" +
+    "https://wa.me/447462229610?text=" +
     encodeURIComponent("Hello Sumar, I'm from your portfolio site"),
   avatar:
     "https://res.cloudinary.com/dr83qj6bf/image/upload/v1779154620/IMG_20260519_023456_040_k4yhkw.jpg",
