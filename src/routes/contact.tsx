@@ -51,7 +51,7 @@ function ContactPage() {
     }
     setError(null);
     const text = `Hello ${SITE.shortName}, my name is ${parsed.data.name}.%0A%0AProject type: ${parsed.data.projectType}%0A%0A${encodeURIComponent(parsed.data.message)}`;
-    const url = `https://wa.me/18572924938?text=${text}`;
+    const url = `https://wa.me/447462229610?text=${text}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
