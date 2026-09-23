@@ -19,7 +19,18 @@ export function Layout({ children }: { children: ReactNode }) {
       </main>
       <footer className="pb-nav">
         <div className="mx-auto max-w-2xl px-6 pb-6 pt-4 text-center text-xs text-muted-foreground">
-          © 2026 {SITE.name}. All rights reserved.
+          <p>© 2026 {SITE.name}. All rights reserved.</p>
+          <p className="mt-2">
+            Built by{" "}
+            <a
+              href="https://eltemur.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-muted-foreground/40 underline-offset-2 hover:text-foreground"
+            >
+              Eltemur Zentra Studio
+            </a>
+          </p>
         </div>
       </footer>
       {atBottom && nextTab && (
